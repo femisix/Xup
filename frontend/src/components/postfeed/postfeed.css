@@ -1,0 +1,169 @@
+.postfeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.postfeed .postfeedwrapper {
+  width: 60%;
+  background-color: #212121;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.postfeed .postfeedwrapper .postfeedtop {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.postfeed .postfeedwrapper .postfeedtop .postfeedtopleft {
+  display: flex;
+  align-items: center;
+}
+.postfeed .postfeedwrapper .postfeedtop .postfeedtopleft .postfeedprofileimg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.postfeed .postfeedwrapper .postfeedtop .postfeedtopleft .postusername {
+  font-size: 16px;
+}
+.postfeed .postfeedwrapper .postfeedtop .postfeedtopleft .postusername {
+  margin: 0 10px;
+}
+.postfeed .postfeedwrapper .postfeedtop .postfeedtopleft .postdate {
+  font-size: small;
+  opacity: 0.6;
+}
+.postfeed .postfeedwrapper .postfeedtopright {
+  display: flex;
+  position: relative;
+}
+.postfeed .postfeedwrapper .postfeedtopright .options {
+  position: absolute;
+  right: 1.5rem;
+}
+.postfeed .postfeedwrapper .postfeedtopright .options ul {
+  background-color: white;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.postfeed .postfeedwrapper .postfeedtopright .options ul li {
+  color: black;
+  cursor: pointer;
+}
+.postfeed .postfeedwrapper .postfeedcenter {
+  margin: 20px 0;
+}
+.postfeed .postfeedwrapper .postfeedcenter .postfeedimg {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+  max-height: 500px;
+}
+.postfeed .postfeedwrapper .postbottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomlike {
+  display: flex;
+  align-items: center;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomlike .postfeedlike {
+  cursor: pointer;
+  width: 1.5rem;
+  margin: 0 0.2rem;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomlike .postfeedliketext {
+  font-size: smaller;
+  margin: 0 0.3rem;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomlike .postfeedlikecounter {
+  font-size: smaller;
+  margin: 0 0.3rem;
+  background-color: #3d3d3d;
+  border-radius: 100%;
+  min-width: 15px;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomcomment {
+  display: flex;
+  align-items: center;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomcomment .postfeedcommenticon {
+  cursor: pointer;
+  width: 1.5rem;
+  margin: 0 0.2rem;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomcomment .postfeedcommenttext {
+  font-size: smaller;
+  margin: 0 0.3rem;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomcomment .postfeedcommentcounter {
+  font-size: smaller;
+  margin: 0 0.3rem;
+  border-radius: 100%;
+  background-color: #3d3d3d;
+  min-width: 15px;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomshare {
+  display: flex;
+  align-items: center;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomshare .sharepostfeedicon {
+  cursor: pointer;
+  width: 1.5rem;
+  margin: 0 0.2rem;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomshare .sharepostfeedtext {
+  font-size: smaller;
+  margin: 0 0.3rem;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomshare .sharepostfeedcounter {
+  font-size: smaller;
+  margin: 0 0.3rem;
+  border-radius: 100%;
+  background-color: #3d3d3d;
+  min-width: 15px;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomright {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomright img {
+  width: 1.5rem;
+}
+.postfeed .postfeedwrapper .postbottom .postfeedbottomright span {
+  margin: 0 0.3rem;
+}
+
+@media screen and (max-width: 425px) {
+  .postfeed .postfeedwrapper {
+    width: 85%;
+  }
+  .postfeed .postfeedwrapper .postbottom .postfeedbottomlike .postfeedliketext {
+    display: none;
+  }
+  .postfeed .postfeedwrapper .postbottom .postfeedbottomcomment .postfeedcommenttext {
+    display: none;
+  }
+  .postfeed .postfeedwrapper .postbottom .postfeedbottomshare .sharepostfeedtext {
+    display: none;
+  }
+}/*# sourceMappingURL=postfeed.css.map */

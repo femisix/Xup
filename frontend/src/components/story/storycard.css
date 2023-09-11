@@ -1,0 +1,49 @@
+.storycard {
+  width: 8rem;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.storycard .storypost {
+  width: 8rem;
+  height: 15.6rem;
+  object-fit: cover;
+  opacity: 0.5;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+.storycard .storypost:hover {
+  transform: scale(1.1);
+}
+.storycard .storyprofile {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  object-fit: cover;
+  position: absolute;
+  border: 2px solid #ff034f;
+  top: 7%;
+  left: 10%;
+}
+.storycard span {
+  width: 100%;
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+  font-size: small;
+}
+
+@media screen and (max-width: 425px) {
+  .storycard {
+    width: 6rem;
+    height: 10rem;
+  }
+  .storycard .storypost {
+    width: 7rem;
+    height: 10rem;
+  }
+}/*# sourceMappingURL=storycard.css.map */

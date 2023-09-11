@@ -1,0 +1,27 @@
+@mixin centerline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$base-color: #181818;
+$mid-color:  #212121;
+$accent-color: #3d3d3d;
+$high-accent-color:rgb(185, 185, 185);
+$font-color: #ffffff;
+$app-color: #ff034f;
+
+.backgroundimage{
+
+    .captionimage{
+        span{
+            font-size: medium;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+    }
+}

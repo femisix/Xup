@@ -1,0 +1,141 @@
+@mixin centerline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$base-color: #181818;
+$mid-color: #212121;
+$accent-color: #3d3d3d;
+$high-accent-color: rgb(185, 185, 185);
+$font-color: #ffffff;
+$app-color: #ff034f;
+
+.post {
+  @include centerline();
+
+  .postwrapper {
+    max-width: 70%;
+    background-color: $mid-color;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+    .posttop {
+      display: flex;
+      align-items: center;
+      img {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-right: 10px;
+      }
+
+      .postinput {
+        border: none;
+        width: 80%;
+        background-color: $mid-color;
+        color: white;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .posthr {
+      margin: 20px;
+    }
+
+    .shareImgContainer {
+      padding: 0 20px 10px 20px;
+      position: relative;
+    }
+
+    .shareimg {
+      width: 100%;
+      object-fit: cover;
+    }
+    .shareCancelImg {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    .postbuttom {
+      @include centerline();
+
+      .postoptions {
+        display: flex;
+
+        .postoption {
+          display: flex;
+          align-items: center;
+          margin-right: 15px;
+          cursor: pointer;
+
+          &:last-of-type {
+            margin-right: 40px;
+          }
+
+          .posticon {
+            width: 1rem;
+          }
+
+          span {
+            font-size: 14px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .postbutton {
+        border: none;
+        padding: 5px;
+        border-radius: 1rem;
+        background-color: $app-color;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .post {
+    height: 8rem;
+
+    .postwrapper {
+      min-width: 85%;
+
+      .postbuttom {
+        width: 100%;
+
+        .postoptions {
+          .postoption {
+            &:last-of-type {
+              margin-right: 20px;
+            }
+
+            .posticon {
+              width: 0.5rem;
+            }
+
+            span {
+              font-size: 10px;
+              margin-left: 5px;
+            }
+          }
+        }
+
+        .postbutton {
+          padding: 3px;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

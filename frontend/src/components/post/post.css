@@ -1,0 +1,108 @@
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post .postwrapper {
+  max-width: 70%;
+  background-color: #212121;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+.post .postwrapper .posttop {
+  display: flex;
+  align-items: center;
+}
+.post .postwrapper .posttop img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.post .postwrapper .posttop .postinput {
+  border: none;
+  width: 80%;
+  background-color: #212121;
+  color: white;
+}
+.post .postwrapper .posttop .postinput:focus {
+  outline: none;
+}
+.post .postwrapper .posthr {
+  margin: 20px;
+}
+.post .postwrapper .shareImgContainer {
+  padding: 0 20px 10px 20px;
+  position: relative;
+}
+.post .postwrapper .shareimg {
+  width: 100%;
+  object-fit: cover;
+}
+.post .postwrapper .shareCancelImg {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.post .postwrapper .postbuttom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post .postwrapper .postbuttom .postoptions {
+  display: flex;
+}
+.post .postwrapper .postbuttom .postoptions .postoption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.post .postwrapper .postbuttom .postoptions .postoption:last-of-type {
+  margin-right: 40px;
+}
+.post .postwrapper .postbuttom .postoptions .postoption .posticon {
+  width: 1rem;
+}
+.post .postwrapper .postbuttom .postoptions .postoption span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.post .postwrapper .postbuttom .postbutton {
+  border: none;
+  padding: 5px;
+  border-radius: 1rem;
+  background-color: #ff034f;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .post {
+    height: 8rem;
+  }
+  .post .postwrapper {
+    min-width: 85%;
+  }
+  .post .postwrapper .postbuttom {
+    width: 100%;
+  }
+  .post .postwrapper .postbuttom .postoptions .postoption:last-of-type {
+    margin-right: 20px;
+  }
+  .post .postwrapper .postbuttom .postoptions .postoption .posticon {
+    width: 0.5rem;
+  }
+  .post .postwrapper .postbuttom .postoptions .postoption span {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .post .postwrapper .postbuttom .postbutton {
+    padding: 3px;
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=post.css.map */

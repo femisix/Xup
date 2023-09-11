@@ -1,0 +1,105 @@
+.sidebar {
+  flex: 1.6;
+  align-self: start;
+  max-height: calc(100vh - 5rem);
+  overflow-y: scroll;
+  position: sticky;
+  top: 6rem;
+  left: 0;
+  bottom: 0;
+}
+.sidebar::-webkit-scrollbar {
+  width: 7px;
+  background-color: #3d3d3d;
+}
+.sidebar::-webkit-scrollbar-track {
+  width: 5px;
+  display: none;
+}
+.sidebar::-webkit-scrollbar-track:hover {
+  display: block;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #ff034f;
+  border-radius: 3rem;
+}
+.sidebar .sidebarwrapper {
+  padding: 20px;
+}
+.sidebar .sidebarwrapper .sidebarlist {
+  padding: 0;
+  margin: 0;
+}
+.sidebar .sidebarwrapper .sidebarlist .sidebarlistitem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: 0.4s ease;
+  cursor: pointer;
+  border-radius: 3rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+.sidebar .sidebarwrapper .sidebarlist .sidebarlistitem:hover {
+  background-color: #3d3d3d;
+}
+.sidebar .sidebarwrapper .sidebarlist .sidebarlistitem span {
+  font-size: 15px;
+}
+.sidebar .sidebarwrapper .sidebarlist .sidebarlistitem .sidebaricon {
+  margin-right: 1rem;
+}
+.sidebar .sidebarwrapper .hr {
+  margin: 1rem 0;
+}
+.sidebar .sidebarwrapper .sidebarcommunitywrapper .communityhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.sidebar .sidebarwrapper .sidebarcommunitywrapper .communityhead span {
+  background-color: #3d3d3d;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .sidebarwrapper .sidebarcommunitywrapper .sidebarcommunitylist {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebar .sidebarwrapper .sidebarcommunitywrapper .sidebarcommunitylist .sidebarcommunity {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  transition: 0.4s ease;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+.sidebar .sidebarwrapper .sidebarcommunitywrapper .sidebarcommunitylist .sidebarcommunity:hover {
+  background-color: #3d3d3d;
+}
+.sidebar .sidebarwrapper .sidebarcommunitywrapper .sidebarcommunitylist .sidebarcommunity img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  object-fit: cover;
+  padding: 0 0.5rem;
+}
+.sidebar .sidebarwrapper .sidebarcommunitywrapper .sidebarcommunitylist .sidebarcommunity .text p {
+  font-size: 14px;
+}
+.sidebar .sidebarwrapper .sidebarcommunitywrapper .sidebarcommunitylist .sidebarcommunity .text span {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 425px) {
+  .sidebar {
+    display: none;
+  }
+}/*# sourceMappingURL=sidebar.css.map */

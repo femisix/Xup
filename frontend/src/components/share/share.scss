@@ -1,0 +1,152 @@
+@mixin centerline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+$base-color: #181818;
+$mid-color:  #212121;
+$accent-color: #3d3d3d;
+$high-accent-color:rgb(185, 185, 185);
+$font-color: #ffffff;
+$app-color: #ff034f;
+
+.sharewrapper{
+    width: 30rem;
+    height: 30rem;
+    background-color: $mid-color;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    left: 20%;
+
+    .sharecontainer{
+        display: flex;
+        flex-direction: column;
+
+        .sharetop{
+            @include centerline();
+            height: 5rem;
+            width: 100%;
+            position: relative;
+
+            .closearea{
+                @include centerline();
+                .close{
+                    display: flex;
+                    float: right;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 2rem;
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 100%;
+                    background-color: $accent-color;
+                    transition: .4s ease-in;
+    
+                    &:hover{
+                        background-color: $high-accent-color;
+                    }
+                }
+            }
+            
+        }
+
+        .sharecenter{
+            textarea{
+                width: 90%;
+                height: 10rem;
+                font-size: large;
+                padding: 1rem;
+                background-color: $mid-color;
+                border: none;
+                color: white;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            .profiling{
+
+                display: flex;
+                h5{
+                    @include centerline();
+                }
+
+                img{
+                    padding: 1rem;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                }
+            }
+
+            .sharingarea{
+                display: flex;
+                max-width: 100%;
+                padding-left: 1rem;
+                border: 1px solid white;
+                margin: 0 2rem;
+                height: 3rem;
+                border-radius: 1rem;
+                @include centerline();
+
+
+
+                .postoptions{
+                    display: flex;
+                    float: right;
+    
+                    .postoption{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 15px;
+                        cursor: pointer;
+    
+                        &:last-of-type{
+                        margin-right: 40px;
+                        }
+    
+                        .posticon{
+                            width: 1rem;
+                        }
+    
+                        span{
+                            font-size: 14px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sharebottom{
+            @include centerline();
+            padding-top: .8rem;
+
+            button{
+                border-radius: 1rem;
+                min-width: 70%;
+                height: 1.5rem;
+                @include centerline();
+                background-color: $accent-color;
+                border: none;
+                padding: 1.5rem 0;
+                cursor: pointer;
+                transition: .4s ease-in;
+                color: white;
+
+                &:hover{
+                    background-color: $high-accent-color;
+                }
+
+            }
+        }
+    }
+}

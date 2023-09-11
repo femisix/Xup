@@ -1,0 +1,123 @@
+.sharewrapper {
+  width: 30rem;
+  height: 30rem;
+  background-color: #212121;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  left: 20%;
+}
+.sharewrapper .sharecontainer {
+  display: flex;
+  flex-direction: column;
+}
+.sharewrapper .sharecontainer .sharetop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  position: relative;
+}
+.sharewrapper .sharecontainer .sharetop .closearea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sharewrapper .sharecontainer .sharetop .closearea .close {
+  display: flex;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  background-color: #3d3d3d;
+  transition: 0.4s ease-in;
+}
+.sharewrapper .sharecontainer .sharetop .closearea .close:hover {
+  background-color: rgb(185, 185, 185);
+}
+.sharewrapper .sharecontainer .sharecenter textarea {
+  width: 90%;
+  height: 10rem;
+  font-size: large;
+  padding: 1rem;
+  background-color: #212121;
+  border: none;
+  color: white;
+}
+.sharewrapper .sharecontainer .sharecenter textarea:focus {
+  outline: none;
+}
+.sharewrapper .sharecontainer .sharecenter .profiling {
+  display: flex;
+}
+.sharewrapper .sharecontainer .sharecenter .profiling h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sharewrapper .sharecontainer .sharecenter .profiling img {
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.sharewrapper .sharecontainer .sharecenter .sharingarea {
+  display: flex;
+  max-width: 100%;
+  padding-left: 1rem;
+  border: 1px solid white;
+  margin: 0 2rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sharewrapper .sharecontainer .sharecenter .sharingarea .postoptions {
+  display: flex;
+  float: right;
+}
+.sharewrapper .sharecontainer .sharecenter .sharingarea .postoptions .postoption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.sharewrapper .sharecontainer .sharecenter .sharingarea .postoptions .postoption:last-of-type {
+  margin-right: 40px;
+}
+.sharewrapper .sharecontainer .sharecenter .sharingarea .postoptions .postoption .posticon {
+  width: 1rem;
+}
+.sharewrapper .sharecontainer .sharecenter .sharingarea .postoptions .postoption span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.sharewrapper .sharecontainer .sharebottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+.sharewrapper .sharecontainer .sharebottom button {
+  border-radius: 1rem;
+  min-width: 70%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d3d3d;
+  border: none;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+  color: white;
+}
+.sharewrapper .sharecontainer .sharebottom button:hover {
+  background-color: rgb(185, 185, 185);
+}/*# sourceMappingURL=share.css.map */

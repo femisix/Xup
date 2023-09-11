@@ -1,0 +1,70 @@
+.storycards {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 40rem;
+}
+.storycards .createstorycard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  position: relative;
+  width: 8rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.storycards .createstorycard img {
+  min-width: 6rem;
+  transition: 0.4s ease;
+}
+.storycards .createstorycard img:hover {
+  transform: scale(1.1);
+}
+.storycards .createstorycard .addicon {
+  z-index: 100;
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ff034f;
+  border-radius: 100%;
+  border: 5px solid #212121;
+}
+.storycards .createstorycard span {
+  z-index: 2;
+  padding: 1.3rem 0;
+  background-color: #212121;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  .storycards {
+    overflow-x: scroll;
+  }
+  .storycards .createstorycard {
+    width: 5.8rem;
+    height: 10rem;
+    border-radius: 1rem;
+  }
+  .storycards .createstorycard img {
+    width: 7rem;
+    opacity: 0.6;
+  }
+  .storycards .createstorycard .addicon {
+    top: 35%;
+    left: 30%;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .storycards .createstorycard span {
+    position: absolute;
+    background: none;
+    top: 48%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=cardCarousel.css.map */

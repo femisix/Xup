@@ -1,0 +1,33 @@
+.body {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.body .followbutton {
+  position: absolute;
+  top: 72.8%;
+  left: 50%;
+  display: flex;
+  background-color: #ff034f;
+  border: none;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  max-height: 3rem;
+  max-height: 2.4rem;
+  width: 8rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.body .followbutton .addstory {
+  width: 1rem;
+  background: transparent;
+}
+.body .followbutton:hover {
+  background-color: #f45987;
+}
+.body .divbody {
+  margin-left: -2rem;
+}/*# sourceMappingURL=Profile.css.map */

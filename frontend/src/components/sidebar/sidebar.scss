@@ -1,0 +1,145 @@
+@mixin centerline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$base-color: #181818;
+$mid-color:  #212121;
+$accent-color: #3d3d3d;
+$high-accent-color:rgb(185, 185, 185);
+$font-color: #ffffff;
+$app-color: #ff034f;
+
+.sidebar{
+    flex: 1.6;
+    align-self: start;
+    max-height: calc(100vh - 5rem);         //because our topbar is 5rem
+    overflow-y: scroll;
+    position: sticky;
+    top: 6rem;
+    left: 0;
+    bottom: 0;
+
+    &::-webkit-scrollbar{
+        width: 7px;
+        background-color: $accent-color;
+    
+    }
+    &::-webkit-scrollbar-track{
+        width: 5px;    display: none;
+
+        &:hover{
+            display: block;
+        }
+
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $app-color;
+        border-radius: 3rem;
+    }
+
+    .sidebarwrapper{
+        padding: 20px;
+
+        .sidebarlist{
+            padding: 0;
+            margin: 0;
+
+            .sidebarlistitem{
+                display: flex;
+                align-items: center;
+                margin-bottom: .5rem;    
+                transition: .4s ease; 
+                cursor: pointer;
+                border-radius: 3rem;
+                height: 3rem;
+                padding-left: .5rem;
+                
+                
+                &:hover{
+                    background-color: $accent-color;
+                }
+
+                span{
+                    font-size: 15px;
+                }
+
+                .sidebaricon{
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        .hr{
+            margin: 1rem 0;
+        }
+
+
+        .sidebarcommunitywrapper{
+            .communityhead{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1rem 0;
+
+                span{
+                    background-color: $accent-color;
+                    border-radius: 100%;
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .sidebarcommunitylist{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+    
+                .sidebarcommunity{
+                    display: flex;
+                    align-items: center;
+                    padding: .5rem .5rem;  
+                    transition: .4s ease; 
+                    cursor: pointer;
+                    border-radius: 3rem;
+    
+                    &:hover{
+                        background-color: $accent-color;
+                    }
+    
+                    img{
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 100%;
+                        object-fit: cover;
+                        padding: 0 .5rem;
+                    }
+    
+                    .text{
+                        p{
+                            font-size: 14px;
+                        }
+    
+                        span{
+                            font-size: 12px;
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    
+    .sidebar{
+        display: none;
+    }
+}

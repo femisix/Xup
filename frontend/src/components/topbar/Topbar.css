@@ -1,0 +1,265 @@
+.topbarcontainer {
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+.topbarcontainer .topbarleft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.topbarcontainer .topbarleft h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#ff034f, #ffffff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.topbarcontainer .topbarcenter {
+  display: flex;
+  justify-content: space-between;
+}
+.topbarcontainer .topbarcenter .searchicon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.topbarcontainer .topbarcenter .searchicon.active {
+  width: 15rem;
+}
+.topbarcontainer .topbarcenter .searchicon.inactive {
+  width: 1rem;
+}
+.topbarcontainer .topbarcenter .searchicon input {
+  border: none;
+  border-radius: 1rem;
+  height: 40%;
+  width: 100%;
+  padding-left: 1rem;
+  outline: none;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.topbarcontainer .topbarcenter .searchicon input.active {
+  opacity: 1;
+}
+.topbarcontainer .topbarcenter .searchicon .search {
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+  padding: 5px;
+  background-color: #ff034f;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.topbarcontainer .topbarcenter .searchicon .search.active {
+  right: 5%;
+}
+.topbarcontainer .topbarcenter .searchicon .close {
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  transition: all 0.6s 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.topbarcontainer .topbarcenter .searchicon .close.active {
+  left: 100%;
+  transform: rotate(360deg);
+}
+.topbarcontainer .topbarcenter .homeoptionstopbar {
+  display: flex;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 23rem;
+  padding: 0 0.5rem;
+  height: 3rem;
+  align-self: center;
+  border-radius: 3rem;
+  margin-left: 4rem;
+}
+.topbarcontainer .topbarcenter .homeoptionstopbar h5 {
+  background-color: #ff034f;
+  padding: 0.5rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.topbarcontainer .topbarcenter .homeoptionstopbar h5:hover {
+  background-color: #3d3d3d !important;
+}
+.topbarcontainer .topbarcenter .homeoptionstopbar h5:nth-of-type(2) {
+  margin-left: 1.5rem;
+  background-color: #212121;
+}
+.topbarcontainer .topbarcenter .homeoptionstopbar h5:nth-of-type(3) {
+  margin-left: 1.5rem;
+  background-color: #212121;
+}
+.topbarcontainer .topbarright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.5rem;
+  position: relative;
+}
+.topbarcontainer .topbarright .topbaricon {
+  display: flex;
+  padding: 0.5rem;
+  position: relative;
+  max-width: 1.5rem;
+  max-height: 2.5rem;
+  border-radius: 100%;
+  background-color: #3d3d3d;
+  margin: 0 0.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.topbarcontainer .topbarright .topbaricon:hover {
+  background-color: rgb(185, 185, 185);
+}
+.topbarcontainer .topbarright .topbaricon .notificationicon {
+  color: #ffffff;
+}
+.topbarcontainer .topbarright .topbaricon .messageicon {
+  color: #ffffff;
+}
+.topbarcontainer .topbarright .topbaricon .topbaritembadge {
+  width: 13px;
+  height: 13px;
+  background-color: #ff034f;
+  border-radius: 100%;
+  color: #ffffff;
+  position: absolute;
+  bottom: -3px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 8px;
+}
+.topbarcontainer .topbarright .profilesection {
+  display: flex;
+  padding: 0.5rem;
+  position: relative;
+}
+.topbarcontainer .topbarright .profilesection .profilesub1 {
+  position: relative;
+  display: flex;
+}
+.topbarcontainer .topbarright .profilesection .profilesub1 h5 {
+  font-size: 15px;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topbarcontainer .topbarright .profilesection .profilesub1 .topbarimg {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.topbarcontainer .topbarright .profilesection .profilesub1 .profilebadge {
+  border: 1px solid #181818;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  background-color: rgb(0, 255, 162);
+}
+
+.dropdownitem {
+  overflow: hidden;
+}
+.dropdownitem p {
+  font-size: small;
+  margin-top: -1.5rem;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  align-items: stretch;
+  cursor: pointer;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+.dropdownitem p:first-of-type {
+  margin-top: -1rem;
+}
+.dropdownitem p:hover {
+  background-color: #212121;
+}
+
+@media screen and (max-width: 425px) {
+  .topbarcontainer .topbarleft {
+    position: absolute;
+    top: 1rem;
+  }
+  .topbarcontainer .topbarcenter {
+    position: absolute;
+    top: 6.5rem;
+    left: -3%;
+  }
+  .topbarcontainer .topbarcenter .homeoptionstopbar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .topbarcontainer .topbarright {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .topbarcontainer .topbarright .topbaricon {
+    padding: 0.5rem;
+  }
+  .topbarcontainer .topbarright .profilesection .profilesub1 {
+    display: none;
+  }
+  .topbarcontainer .topbarright .profilesection .profilesub1 .profilepic {
+    width: 40px;
+    height: 40px;
+  }
+  .topbarcontainer .topbarright .profilesection .profilesub2 {
+    display: block;
+    position: absolute;
+    left: -1.7rem;
+    bottom: -1.2rem;
+  }
+  .topbarcontainer .topbarright .profilesection .profilesub2 h5 {
+    display: none;
+  }
+  .topbarcontainer .topbarright .profilesection .profilesub2 .profilepic {
+    margin-left: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=Topbar.css.map */

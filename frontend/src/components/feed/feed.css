@@ -1,0 +1,13 @@
+.feed {
+  flex: 5.5;
+}
+.feed .feedwrapper {
+  padding: 20px;
+}
+
+@media screen and (max-width: 425px) {
+  .feed {
+    max-width: 100%;
+    margin-top: 5rem;
+  }
+}/*# sourceMappingURL=feed.css.map */

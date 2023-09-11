@@ -1,0 +1,79 @@
+.login .loginwrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login .loginwrapper .logintop .loginlogo {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: 1000;
+  background: -webkit-linear-gradient(#ff034f, #ffffff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.login .loginwrapper .logintop .logindesc span {
+  font-weight: 1000;
+  background: -webkit-linear-gradient(#ff034f, #ffffff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.login .loginwrapper .loginmain {
+  padding-top: 1rem;
+}
+.login .loginwrapper .loginmain .loginbox {
+  height: 350px;
+  width: 20rem;
+  padding: 20px;
+  background-color: #212121;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login .loginwrapper .loginmain .loginbox .logininput {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.login .loginwrapper .loginmain .loginbox .logininput:focus {
+  outline: none;
+}
+.login .loginwrapper .loginmain .loginbox .loginbutton {
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff034f;
+  color: white;
+  font-size: 20px;
+  font-weight: 500px;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+.login .loginwrapper .loginmain .loginbox .loginbutton:hover {
+  background-color: #fb5788;
+}
+.login .loginwrapper .loginmain .loginbox .loginforgot {
+  color: #ff034f;
+  cursor: pointer;
+}
+.login .loginwrapper .loginmain .loginbox .loginregisterbutton {
+  width: 60%;
+  align-self: center;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3bf120;
+  color: white;
+  font-size: 20px;
+  font-weight: 500px;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+.login .loginwrapper .loginmain .loginbox .loginregisterbutton:hover {
+  background-color: #8bf47b;
+}/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,66 @@
+@mixin centerline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$base-color: #181818;
+$mid-color:  #212121;
+$accent-color: #3d3d3d;
+$high-accent-color:rgb(185, 185, 185);
+$font-color: #ffffff;
+$app-color: #ff034f;
+
+
+
+.storycard{
+    width: 8rem;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    overflow: hidden;
+    
+    .storypost{
+        width: 8rem;
+        height: 15.6rem;
+        object-fit: cover;
+        opacity: .5;
+        border-radius: 1rem;
+        @include centerline();
+        transition: .4s ease;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    .storyprofile{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100%;
+        object-fit: cover;
+        position: absolute;
+        border: 2px solid $app-color;
+        top: 7%;
+        left: 10%;
+    }
+
+    span{
+        width: 100%;
+        position: absolute;
+        bottom: 15%;
+        left: 8%;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .storycard{
+        width: 6rem;
+        height: 10rem;
+        .storypost{
+            width: 7rem;
+            height: 10rem;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@mixin centerline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$base-color: #181818;
+$mid-color:  #212121;
+$accent-color: #3d3d3d;
+$high-accent-color:rgb(185, 185, 185);
+$font-color: #ffffff;
+$app-color: #ff034f;
+
+.storycontainer{
+    @include centerline();
+
+
+    .storywrapper{
+        width: 60%;
+        background-color: $mid-color;
+        border-radius: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
+        overflow-x: hidden;
+
+       
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    
+        .storyhead{
+            height: 4rem;
+            width: 105%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            .storyicon{
+                color: $app-color;
+                width: 1.5rem important;
+            }
+
+            span{
+                margin-left: 1rem;
+                font-size: 1.5rem;
+                color: $app-color;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 425px){
+    .storycontainer{
+
+        .storywrapper{
+            width: 80%;
+            border-radius: 1rem;
+            padding-right: .5rem;
+        }
+    }
+}

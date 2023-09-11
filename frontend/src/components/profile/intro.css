@@ -1,0 +1,44 @@
+.intro {
+  max-width: 30%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-radius: 1rem;
+}
+.intro .intoheader {
+  font-size: 2rem;
+  padding-left: 1rem;
+  float: left;
+  padding-top: 1rem;
+}
+.intro .introdetails {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.intro .introdetails .editbio {
+  border: none;
+  width: 100%;
+  background-color: #3d3d3d;
+  height: 2.5rem;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro .introdetails .work,
+.intro .introdetails .study,
+.intro .introdetails .elementry,
+.intro .introdetails .lives,
+.intro .introdetails .status {
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=intro.css.map */
