@@ -1,0 +1,1 @@
+Welcome to the Social Media Repository! This repository contains the code for a social media platform that includes a story feature. With this platform, users can share their thoughts, updates, and moments with their friends and followers.
